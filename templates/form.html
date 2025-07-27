@@ -1,0 +1,131 @@
+<html>
+
+<body>
+    <form action="{{url_for('predict_datapoint')}}" method="POST">
+
+        <div class="form-group">
+            <label for="LIMIT_BAL">Credit Limit : :</label>
+            <input type="text" id="LIMIT_BAL" name="LIMIT_BAL" placeholder="Enter Credit Limit (int)">
+        </div>
+
+        <div class="form-group">
+            <label for="SEX">Gender :</label>
+            <input type="text" id="SEX" name="SEX" placeholder="Enter 1 for Male and 2 for Female">
+        </div>
+
+        <div class="form-group">
+            <label for="EDUCATION">Education Level :</label>
+            <input type="text" id="EDUCATION" name="EDUCATION" placeholder="Enter 1 for High School, 2 for Junior College and 3 for Degree Graduate">
+        </div>
+
+        <div class="form-group">
+            <label for="MARRIAGE">Marital Status :</label>
+            <input type="text" id="MARRIAGE" name="MARRIAGE" placeholder="Enter 1 for Married and 2 for Unmarried">
+        </div>
+
+        <div class="form-group">
+            <label for="AGE">Age :</label>
+            <input type="text" id="AGE" name="AGE" placeholder="Enter Age Upto 100">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_0">Previous Month Payment Delay Status:</label>
+            <input type="text" id="PAY_0" name="PAY_0" placeholder="Enter 0 for payment on time , -1 for payment of one month , 1 for delay of two months , 2 for delay of three months and so on">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_2">Second Previous Month Payment Delay Status :</label>
+            <input type="text" id="PAY_2" name="PAY_2" placeholder="Enter 0 for payment on time , -1 for payment of one month , 1 for delay of two months , 2 for delay of three months and so on">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_3">Third Previous Month Payment Delay Status :</label>
+            <input type="text" id="PAY_3" name="PAY_3" placeholder="Enter 0 for payment on time , -1 for payment of one month , 1 for delay of two months , 2 for delay of three months and so on">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_4">Forth Previous Month Payment Delay Status :</label>
+            <input type="text" id="PAY_4" name="PAY_4" placeholder="Enter 0 for payment on time , -1 for payment of one month , 1 for delay of two months , 2 for delay of three months and so on">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_5">Fifth Previous Month Payment Delay Status :</label>
+            <input type="text" id="PAY_5" name="PAY_5" placeholder="Enter 0 for payment on time , -1 for payment of one month , 1 for delay of two months , 2 for delay of three months and so on">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_6">Sixth Previous Month Payment Delay Status :</label>
+            <input type="text" id="PAY_6" name="PAY_6" placeholder="Enter 0 for payment on time , -1 for payment of one month , 1 for delay of two months , 2 for delay of three months and so on">
+        </div>
+
+        <div class="form-group">
+            <label for="BILL_AMT1">Current Bill Amount  :</label>
+            <input type="text" id="BILL_AMT1" name="BILL_AMT1" placeholder="Enter Bill Amount of the  Current Month">
+        </div>
+
+        <div class="form-group">
+            <label for="BILL_AMT2">Previous Month Bill Amount :</label>
+            <input type="text" id="BILL_AMT2" name="BILL_AMT2" placeholder="Enter Bill Amount of the Previous Month">
+        </div>
+
+        <div class="form-group">
+            <label for="BILL_AMT3">Second Previous Month Bill Amount  :</label>
+            <input type="text" id="BILL_AMT3" name="BILL_AMT3" placeholder="Enter Bill Amount of the Second Previous Month">
+        </div>
+
+        <div class="form-group">
+            <label for="BILL_AMT4">Third Previous Month Bill Amount  :</label>
+            <input type="text" id="BILL_AMT4" name="BILL_AMT4" placeholder="Enter Bill Amount of the Third Previous Month">
+        </div>
+
+        <div class="form-group">
+            <label for="BILL_AMT5">Forth Previous Month Bill Amount  :</label>
+            <input type="text" id="BILL_AMT5" name="BILL_AMT5" placeholder="Enter Bill Amount of the Forth Previous Month">
+        </div>
+
+        <div class="form-group">
+            <label for="BILL_AMT6">Fifth Previous Month Bill Amount  :</label>
+            <input type="text" id="BILL_AMT6" name="BILL_AMT6" placeholder="Enter Bill Amount of the Fifth Previous Month">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_AMT1">Current Month Amount Paid :</label>
+            <input type="text" id="PAY_AMT1" name="PAY_AMT1" placeholder="Enter Amont Paid by the Holder for the Current Month">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_AMT2">Previous Month Amount Paid :</label>
+            <input type="text" id="PAY_AMT2" name="PAY_AMT2" placeholder="Enter Amont Paid by the Holder for the Previous Month">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_AMT3">Second Previous Month Amount Paid :</label>
+            <input type="text" id="PAY_AMT3" name="PAY_AMT3" placeholder="Enter Amont Paid by the Holder for the Second Previous Month">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_AMT4">Third Previous Month Amount Paid :</label>
+            <input type="text" id="PAY_AMT4" name="PAY_AMT4" placeholder="Enter Amont Paid by the Holder for the Third Previous Month">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_AMT5">Forth Previous  Month Amount Paid :</label>
+            <input type="text" id="PAY_AMT5" name="PAY_AMT5" placeholder="Enter Amont Paid by the Holder for the Forth Previous Month">
+        </div>
+
+        <div class="form-group">
+            <label for="PAY_AMT6">Fifth Previous  Month Amount Paid :</label>
+            <input type="text" id="PAY_AMT6" name="PAY_AMT6" placeholder="Enter Amont Paid by the Holder for the Fifth Previous Month">
+        </div>
+
+
+
+        <div style="clear:both;"></div>
+        <input type="submit" value="Submit">
+    </form>
+
+    {{final_result}}
+
+</body>
+
+</html>
